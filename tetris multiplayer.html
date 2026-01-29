@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Co-op Tetris: 2000 to Win</title>
+  <style>
+    body { background: #1a1a1a; color: white; display: flex; flex-direction: column; align-items: center; font-family: sans-serif; }
+    canvas { border: 3px solid #555; background: #000; box-shadow: 0 0 20px #000; }
+    .info { margin: 10px; font-size: 20px; text-align: center; }
+    #status { font-weight: bold; padding: 5px 15px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+<h1>Кооперативный Тетрис</h1>
+<div class="info">
+  <div id="status" style="background: blue;">ХОД: СИНИЙ</div>
+  <div>Очки: <span id="score">0</span> / 2000</div>
+</div>
+
+<canvas id="gameCanvas" width="300" height="600"></canvas>
+
+<p>Собирайте линии вместе! Нужно 2000 очков для победы.</p>
+
+<script src="game.js"></script>
+</body>
+</html>
